@@ -1,0 +1,79 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    height: calc(100% - 1em);
+}
+
+.section-pattern {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    text-align: center;
+    font-family: Calibri Light, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.section-pattern .section-tittle {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.section-pattern.section-a,
+.section-pattern.section-c,
+.section-pattern.section-b,
+.section-pattern.section-d {
+    height: 25%;
+}
+
+.section-pattern.section-a {
+    background-color: #001b25;
+}
+
+.section-pattern.section-c {
+    background-color: #002725;
+}
+
+.section-pattern.section-b {
+    background-color: #092203;
+}
+
+.section-pattern.section-d {
+    background-color: #1a0224;
+}
+
+.section-pattern .slide-down {
+    display: none;
+    font-size: 90vw;
+    background-color: #0D1F35;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    height: 1em;
+    background-color: #000;
+}
+
+@media (min-width: 576px) {
+    .section-pattern .slide-down {
+        font-size: 70vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section-pattern .slide-down {
+        font-size: 50vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section-pattern .slide-down {
+        font-size: 30em;
+    }
+}
